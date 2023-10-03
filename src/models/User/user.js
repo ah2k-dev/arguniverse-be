@@ -6,9 +6,13 @@ const dotenv = require("dotenv");
 const validator = require("validator");
 dotenv.config({ path: ".././src/config/config.env" });
 const userSchema = new Schema({
-  name: {
+  firstName: {
     type: String,
-    required: true,
+    required: [true, "Please add a first name"],
+  },
+  lastName: {
+    type: String,
+    required: [true, "Please add a last name"],
   },
   email: {
     type: String,
@@ -34,28 +38,11 @@ const userSchema = new Schema({
     type: Date,
     default: Date.now(),
   },
-  emailVerified: {
-    type: Boolean,
-    default: false,
-  },
-  emailVerificationToken: {
-    type: Number,
-  },
-  emailVerificationTokenExpires: {
-    type: Date,
-  },
   passwordResetToken: {
     type: Number,
   },
   passwordResetTokenExpires: {
     type: Date,
-  },
-  lastLogin: {
-    type: Date,
-  },
-  isActive: {
-    type: Boolean,
-    default: true,
   },
 });
 
