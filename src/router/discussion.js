@@ -20,6 +20,9 @@ router.route("/search-statement").post(
 router.route("/get-statement/:id").get(
     discussion.getStatement
 );
+router.route("/get-argument/:id").get(
+    discussion.getArgument
+);
 
 router.route("/report-statement/:id").post(
     isAuthenticated,
