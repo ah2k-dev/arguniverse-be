@@ -26,4 +26,24 @@ router.route("/report-statement/:id").post(
     discussion.reportStatement
 );
 
+router.route("/report-argument/:id").post(
+    isAuthenticated,
+    discussion.reportArgument
+)
+
+router.route("/delete-statement/:id").delete(
+    isAuthenticated,
+    discussion.deleteStatement
+)
+
+router.route("/delete-argument/:id").delete(
+    isAuthenticated,
+    discussion.deleteArgument
+)
+
+router.route("/get-reported").get(
+    isAuthenticated,
+    discussion.getReported
+)
+
 module.exports = router;

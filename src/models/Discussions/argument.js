@@ -22,6 +22,15 @@ const argumentSchema = new Schema(
       ref: "Statement",
       required: true,
     },
+    reports: {
+      user: {
+        type: mongoose.Schema.ObjectId,
+        ref: "User",
+      },
+      reason: {
+        type: String,
+      },
+    },
   },
   {
     timestamps: true,
