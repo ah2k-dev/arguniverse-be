@@ -138,7 +138,7 @@ const getStatement = async (req, res) => {
     if (!statement) {
       return ErrorHandler("Statement does not exist", 400, req, res);
     }
-    const arguments = await Argunment.find({
+    const arguments = await Argument.find({
       statement: statement._id
     })
     return SuccessHandler(
