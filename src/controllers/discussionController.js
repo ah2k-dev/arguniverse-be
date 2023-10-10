@@ -334,7 +334,7 @@ const getCategories = async (req, res) => {
       { $group: { _id: "$category" } },
       { $group: { _id: null, uniqueCategories: { $push: "$_id" } } },
       { $project: { _id: 0, uniqueCategories: 1 } }
-    ]).toArray()
+    ])
 
     return SuccessHandler(
       {
