@@ -22,7 +22,7 @@ const argumentSchema = new Schema(
       ref: "Statement",
       required: true,
     },
-    reports: {
+    reports: [{
       user: {
         type: mongoose.Schema.ObjectId,
         ref: "User",
@@ -30,7 +30,7 @@ const argumentSchema = new Schema(
       reason: {
         type: String,
       },
-    },
+    }],
   },
   {
     timestamps: true,

@@ -20,7 +20,7 @@ const statementSchema = new Schema(
       type: Boolean,
       default: true,
     },
-    reports: {
+    reports: [{
       user: {
         type: mongoose.Schema.ObjectId,
         ref: "User",
@@ -28,7 +28,7 @@ const statementSchema = new Schema(
       reason: {
         type: String,
       },
-    },
+    }],
   },
   {
     timestamps: true,

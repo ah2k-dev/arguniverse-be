@@ -328,7 +328,6 @@ const getReported = async (req, res) => {
 const getCategories = async (req, res) => {
   // #swagger.tags=['discussion']
   try {
-
     const categories = await Statement.aggregate([
       { $unwind: "$category" },
       { $group: { _id: "$category" } },
