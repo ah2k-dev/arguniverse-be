@@ -361,4 +361,5 @@ module.exports = {
   deleteArgument,
   getReported,
   getArgument,
+  getCategories
 };
