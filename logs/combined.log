@@ -124,3 +124,15 @@
 {"date":"2023-10-03T15:46:37.058Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/popular-statements"}
 {"date":"2023-10-03T15:46:37.841Z","level":"error","message":"Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)","method":"GET","service":"user-service","url":"/popular-statements"}
 {"date":"2023-10-03T15:47:27.498Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/popular-statements"}
+{"date":"2023-10-10T13:00:38.188Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/popular-statements"}
+{"date":"2023-10-10T13:00:38.211Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/popular-statements"}
+{"date":"2023-10-10T13:00:46.354Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/popular-statements"}
+{"date":"2023-10-10T13:01:09.022Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement/651c35dfc71f7ec3699cb338"}
+{"date":"2023-10-10T13:01:21.983Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/popular-statements"}
+{"date":"2023-10-10T13:01:24.135Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement/651c3672c71f7ec3699cb345"}
+{"date":"2023-10-10T13:15:36.624Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement/651c3672c71f7ec3699cb345"}
+{"date":"2023-10-10T13:15:51.683Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/popular-statements"}
+{"date":"2023-10-10T13:15:54.056Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement/651c3672c71f7ec3699cb345"}
+{"date":"2023-10-10T13:16:11.258Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/popular-statements"}
+{"date":"2023-10-10T13:16:13.540Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement/651c35dfc71f7ec3699cb338"}
+{"date":"2023-10-10T13:17:56.303Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement/651c35dfc71f7ec3699cb338"}

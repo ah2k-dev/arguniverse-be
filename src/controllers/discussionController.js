@@ -139,13 +139,13 @@ const getStatement = async (req, res) => {
       return ErrorHandler("Statement does not exist", 400, req, res);
     }
     const arguments = await Argument.find({
-      statement: statement._id
-    })
+      statement: statement._id,
+    }).populate("user");
     return SuccessHandler(
       {
         message: "Statement",
         statement,
-        arguments
+        arguments,
       },
       200,
       res
@@ -157,8 +157,8 @@ const getStatement = async (req, res) => {
 
 const getArgument = async (req, res) => {
   try {
-    const { id } = req.params
-    const argument = await Argument.findById(id)
+    const { id } = req.params;
+    const argument = await Argument.findById(id);
     return SuccessHandler(
       {
         message: "Argument fetched successfully",
@@ -170,7 +170,7 @@ const getArgument = async (req, res) => {
   } catch (error) {
     return ErrorHandler(error.message, 500, req, res);
   }
-}
+};
 const reportStatement = async (req, res) => {
   // #swagger.tags = ['discussion']
   try {
@@ -186,7 +186,7 @@ const reportStatement = async (req, res) => {
     statement.reports.push({ user, reason });
 
     statement.save();
-    let message = `${statement.title} statement has been reported. Please check the statement and take actions if needed.`
+    let message = `${statement.title} statement has been reported. Please check the statement and take actions if needed.`;
     await sendMail("arguniverse@gmail.com", "Statement Report", message);
 
     return SuccessHandler(
@@ -217,7 +217,7 @@ const reportArgument = async (req, res) => {
     argument.reports.push({ user, reason });
 
     argument.save();
-    let message = `${argument.comment} argument has been reported. Please check the argument and take actions if needed.`
+    let message = `${argument.comment} argument has been reported. Please check the argument and take actions if needed.`;
     await sendMail("arguniverse@gmail.com", "Argument Report", message);
     return SuccessHandler(
       {
@@ -236,14 +236,19 @@ const deleteStatement = async (req, res) => {
   // #swagger.tags = ['discussion']
   try {
     const user = req.user;
-    const { id } = req.params
-    const statement = await Statement.findById(id)
-    if (user.role == 'user') {
+    const { id } = req.params;
+    const statement = await Statement.findById(id);
+    if (user.role == "user") {
       if (user._id !== statement.user) {
-        return ErrorHandler("you are not allowed to delete the statement", 500, req, res);
+        return ErrorHandler(
+          "you are not allowed to delete the statement",
+          500,
+          req,
+          res
+        );
       }
     }
-    await Statement.findByIdAndDelete(id)
+    await Statement.findByIdAndDelete(id);
     return SuccessHandler(
       {
         message: "Statement deleted successfully",
@@ -255,20 +260,25 @@ const deleteStatement = async (req, res) => {
   } catch (error) {
     return ErrorHandler(error.message, 500, req, res);
   }
-}
+};
 
 const deleteArgument = async (req, res) => {
   // #swagger.tags = ['discussion']
   try {
     const user = req.user;
-    const { id } = req.params
-    const argument = await Argument.findById(id)
-    if (user.role == 'user') {
+    const { id } = req.params;
+    const argument = await Argument.findById(id);
+    if (user.role == "user") {
       if (user._id !== argument.user) {
-        return ErrorHandler("you are not allowed to delete the argument", 500, req, res);
+        return ErrorHandler(
+          "you are not allowed to delete the argument",
+          500,
+          req,
+          res
+        );
       }
     }
-    await Argument.findByIdAndDelete(id)
+    await Argument.findByIdAndDelete(id);
     return SuccessHandler(
       {
         message: "Argument deleted successfully",
@@ -280,27 +290,32 @@ const deleteArgument = async (req, res) => {
   } catch (error) {
     return ErrorHandler(error.message, 500, req, res);
   }
-}
+};
 
 const getReported = async (req, res) => {
   // #swagger.tags=['discussion']
   try {
-    if (req.user.role !== 'admin') {
-      return ErrorHandler("You are not allowed to access this resource", 500, req, res);
+    if (req.user.role !== "admin") {
+      return ErrorHandler(
+        "You are not allowed to access this resource",
+        500,
+        req,
+        res
+      );
     }
     const statements = await Statement.find({
-      reports: { $exists: true }
-    })
+      reports: { $exists: true },
+    });
 
     const arguments = await Argument.find({
-      reports: { $exists: true }
-    })
+      reports: { $exists: true },
+    });
 
     return SuccessHandler(
       {
         message: "Reported arguments and statements fetched successfully",
         arguments,
-        statements
+        statements,
       },
       200,
       res
@@ -308,7 +323,7 @@ const getReported = async (req, res) => {
   } catch (error) {
     return ErrorHandler(error.message, 500, req, res);
   }
-}
+};
 
 module.exports = {
   createStatement,
