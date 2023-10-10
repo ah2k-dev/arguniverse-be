@@ -339,7 +339,7 @@ const getCategories = async (req, res) => {
     return SuccessHandler(
       {
         message: "Categories",
-        categories,
+        categories: categories[0].uniqueCategories,
       },
       200,
       res
