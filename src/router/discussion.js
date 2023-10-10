@@ -49,4 +49,6 @@ router.route("/get-reported").get(
     discussion.getReported
 )
 
+router.route("/get-statement-categories", discussion.getCategories)
+
 module.exports = router;
