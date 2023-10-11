@@ -187,7 +187,7 @@ const reportStatement = async (req, res) => {
 
     statement.save();
     let message = `${statement.title} statement has been reported. Please check the statement and take actions if needed.`;
-    await sendMail("arguniverse@gmail.com", "Statement Report", message);
+    // await sendMail("arguniverse@gmail.com", "Statement Report", message);
 
     return SuccessHandler(
       {
@@ -218,7 +218,7 @@ const reportArgument = async (req, res) => {
 
     argument.save();
     let message = `${argument.comment} argument has been reported. Please check the argument and take actions if needed.`;
-    await sendMail("arguniverse@gmail.com", "Argument Report", message);
+    // await sendMail("arguniverse@gmail.com", "Argument Report", message);
     return SuccessHandler(
       {
         message: "Argument reported successfully",
@@ -332,8 +332,8 @@ const getCategories = async (req, res) => {
       { $unwind: "$category" },
       { $group: { _id: "$category" } },
       { $group: { _id: null, uniqueCategories: { $push: "$_id" } } },
-      { $project: { _id: 0, uniqueCategories: 1 } }
-    ])
+      { $project: { _id: 0, uniqueCategories: 1 } },
+    ]);
 
     return SuccessHandler(
       {
@@ -346,7 +346,7 @@ const getCategories = async (req, res) => {
   } catch (error) {
     return ErrorHandler(error.message, 500, req, res);
   }
-}
+};
 
 module.exports = {
   createStatement,
@@ -360,5 +360,5 @@ module.exports = {
   deleteArgument,
   getReported,
   getArgument,
-  getCategories
+  getCategories,
 };
