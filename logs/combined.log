@@ -635,3 +635,5 @@
 {"date":"2023-10-11T19:51:46.721Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
 {"date":"2023-10-11T19:52:56.236Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
 {"date":"2023-10-11T19:54:50.054Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
+{"date":"2023-10-12T04:58:27.697Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
+{"date":"2023-10-12T04:59:12.437Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}

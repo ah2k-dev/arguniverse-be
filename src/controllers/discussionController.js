@@ -305,11 +305,11 @@ const getReported = async (req, res) => {
     }
     const statements = await Statement.find({
       reports: { $exists: true },
-    });
+    }).populate("user");
 
     const arguments = await Argument.find({
       reports: { $exists: true },
-    });
+    }).populate("user");
 
     return SuccessHandler(
       {
