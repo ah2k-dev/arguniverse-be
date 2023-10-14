@@ -647,3 +647,4 @@
 {"date":"2023-10-14T12:44:41.562Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/users"}
 {"date":"2023-10-14T12:45:20.983Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/users"}
 {"date":"2023-10-14T12:48:54.917Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/users"}
+{"date":"2023-10-14T12:49:23.698Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/users"}
