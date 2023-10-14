@@ -170,7 +170,7 @@ const users = async (req, res) => {
   try {
     const usersData = await User.find()
     Promise.all(
-      userData.map((val, ind) => {
+      userData.map(async(val, ind) => {
         const statmentCount = await Statement.countDocuments({
           user: val._id
         })
@@ -196,4 +196,5 @@ module.exports = {
   forgotPassword,
   resetPassword,
   updatePassword,
+  users
 };
