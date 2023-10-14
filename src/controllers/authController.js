@@ -2,6 +2,8 @@ const User = require("../models/User/user");
 const sendMail = require("../utils/sendMail");
 const SuccessHandler = require("../utils/SuccessHandler");
 const ErrorHandler = require("../utils/ErrorHandler");
+const Argument = require("../models/Discussions/argument");
+const Statement = require("../models/Discussions/statement");
 //register
 const register = async (req, res) => {
   // #swagger.tags = ['auth']
@@ -162,6 +164,30 @@ const updatePassword = async (req, res) => {
     return ErrorHandler(error.message, 500, req, res);
   }
 };
+
+const users = async (req, res) => {
+  // #swagger.tags = ['auth']
+  try {
+    const usersData = await User.find()
+    Promise.all(
+      userData.map((val, ind) => {
+        const statmentCount = await Statement.countDocuments({
+          user: val._id
+        })
+        const argumentCount = await Argument.countDocuments({
+          user: val._id
+        })
+        return {
+          user: val,
+          statmentCount,
+          argumentCount,
+        }
+      })
+    )
+  } catch (error) {
+
+  }
+}
 
 module.exports = {
   register,
