@@ -637,3 +637,13 @@
 {"date":"2023-10-11T19:54:50.054Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
 {"date":"2023-10-12T04:58:27.697Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
 {"date":"2023-10-12T04:59:12.437Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
+{"date":"2023-10-14T12:37:45.521Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-10-14T12:38:13.308Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/users"}
+{"date":"2023-10-14T12:38:19.334Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/users"}
+{"date":"2023-10-14T12:38:46.431Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/users"}
+{"date":"2023-10-14T12:39:41.278Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/users"}
+{"date":"2023-10-14T12:40:42.450Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/users"}
+{"date":"2023-10-14T12:42:10.957Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/users"}
+{"date":"2023-10-14T12:44:41.562Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/users"}
+{"date":"2023-10-14T12:45:20.983Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/users"}
+{"date":"2023-10-14T12:48:54.917Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/users"}

@@ -168,26 +168,34 @@ const updatePassword = async (req, res) => {
 const users = async (req, res) => {
   // #swagger.tags = ['auth']
   try {
-    const usersData = await User.find()
+    let usersData = await User.find();
     Promise.all(
-      userData.map(async(val, ind) => {
+      usersData.map(async (val, ind) => {
         const statmentCount = await Statement.countDocuments({
-          user: val._id
-        })
+          user: val._id,
+        });
         const argumentCount = await Argument.countDocuments({
-          user: val._id
-        })
+          user: val._id,
+        });
         return {
           user: val,
           statmentCount,
           argumentCount,
-        }
+        };
       })
-    )
+    ).then((result) => {
+      return SuccessHandler(
+        {
+          users: result,
+        },
+        200,
+        res
+      );
+    });
   } catch (error) {
-
+    return ErrorHandler(error.message, 500, req, res);
   }
-}
+};
 
 module.exports = {
   register,
@@ -196,5 +204,5 @@ module.exports = {
   forgotPassword,
   resetPassword,
   updatePassword,
-  users
+  users,
 };
