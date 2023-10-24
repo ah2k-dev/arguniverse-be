@@ -648,3 +648,21 @@
 {"date":"2023-10-14T12:45:20.983Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/users"}
 {"date":"2023-10-14T12:48:54.917Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/users"}
 {"date":"2023-10-14T12:49:23.698Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/users"}
+{"date":"2023-10-24T18:10:38.023Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
+{"date":"2023-10-24T18:10:38.031Z","level":"error","message":"Cannot read properties of undefined (reading 'role')","method":"GET","service":"user-service","url":"/get-reported"}
+{"date":"2023-10-24T18:11:08.830Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
+{"date":"2023-10-24T18:18:39.687Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
+{"date":"2023-10-24T18:18:40.622Z","level":"error","message":"User is not defined","method":"GET","service":"user-service","url":"/get-reported"}
+{"date":"2023-10-24T18:19:37.716Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
+{"date":"2023-10-24T18:21:33.829Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
+{"date":"2023-10-24T18:21:34.535Z","level":"error","message":"Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)","method":"GET","service":"user-service","url":"/get-reported"}
+{"date":"2023-10-24T18:23:37.808Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
+{"date":"2023-10-24T18:23:38.506Z","level":"error","message":"Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)","method":"GET","service":"user-service","url":"/get-reported"}
+{"date":"2023-10-24T18:23:40.107Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
+{"date":"2023-10-24T18:23:40.777Z","level":"error","message":"Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)","method":"GET","service":"user-service","url":"/get-reported"}
+{"date":"2023-10-24T18:24:40.664Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
+{"date":"2023-10-24T18:25:56.131Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
+{"date":"2023-10-24T18:25:56.794Z","level":"error","message":"Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)","method":"GET","service":"user-service","url":"/get-reported"}
+{"date":"2023-10-24T18:26:19.711Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
+{"date":"2023-10-24T18:28:41.613Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
+{"date":"2023-10-24T18:30:27.216Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}

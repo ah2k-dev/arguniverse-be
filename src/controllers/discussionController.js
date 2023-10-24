@@ -2,6 +2,7 @@ const SuccessHandler = require("../utils/SuccessHandler");
 const ErrorHandler = require("../utils/ErrorHandler");
 const Argument = require("../models/Discussions/argument");
 const Statement = require("../models/Discussions/statement");
+const User = require("../models/User/user");
 
 const createStatement = async (req, res) => {
   // #swagger.tags = ['discussion']
@@ -295,21 +296,45 @@ const deleteArgument = async (req, res) => {
 const getReported = async (req, res) => {
   // #swagger.tags=['discussion']
   try {
-    if (req.user.role !== "admin") {
-      return ErrorHandler(
-        "You are not allowed to access this resource",
-        500,
-        req,
-        res
-      );
-    }
+    // if (req.user.role !== "admin") {
+    //   return ErrorHandler(
+    //     "You are not allowed to access this resource",
+    //     500,
+    //     req,
+    //     res
+    //   );
+    // }
     const statements = await Statement.find({
       reports: { $exists: true },
-    }).populate("user");
-
+    })
+      .populate({
+        path: "reports.user",
+        model: "user",
+        select: "firstName lastName email",
+      })
+      .populate({
+        path: "user",
+        model: "user",
+      });
     const arguments = await Argument.find({
       reports: { $exists: true },
-    }).populate("user");
+    })
+      .populate({
+        path: "reports.user",
+        model: "user",
+        select: "firstName lastName email",
+      })
+      .populate({
+        path: "user",
+        model: "user",
+      });
+
+    // for (const argument of arguments) {
+    //   const populatedReports = await User.find({
+    //     _id: { $in: argument.reports.map((report) => report.user) },
+    //   });
+    //   argument.populatedReports = populatedReports;
+    // }
 
     return SuccessHandler(
       {
