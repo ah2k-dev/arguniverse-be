@@ -123,6 +123,7 @@ const searchStatement = async (req, res) => {
       : {};
     const statements = await Statement.find({
       // category: { $in: category },
+      // title: { $regex: req.body.title, $options: "i" },
       ...titleFilter,
       ...categoryFilter,
     }).populate("user");

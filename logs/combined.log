@@ -666,3 +666,15 @@
 {"date":"2023-10-24T18:26:19.711Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
 {"date":"2023-10-24T18:28:41.613Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
 {"date":"2023-10-24T18:30:27.216Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-reported"}
+{"date":"2023-10-27T15:25:50.559Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/search-statement"}
+{"date":"2023-10-27T15:26:18.003Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/search-statement"}
+{"date":"2023-10-27T15:26:24.192Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/search-statement"}
+{"date":"2023-10-27T15:28:12.684Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/search-statement"}
+{"date":"2023-10-27T15:28:32.359Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/search-statement"}
+{"date":"2023-10-27T15:28:56.441Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/search-statement"}
+{"date":"2023-10-27T15:38:24.922Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/search-statement"}
+{"date":"2023-10-27T16:12:32.235Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/search-statement"}
+{"date":"2023-10-27T16:12:32.240Z","level":"error","message":"category is not defined","method":"POST","service":"user-service","url":"/search-statement"}
+{"date":"2023-10-27T16:12:55.125Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/search-statement"}
+{"date":"2023-10-27T16:12:57.534Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/search-statement"}
+{"date":"2023-10-27T16:14:32.706Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/search-statement"}

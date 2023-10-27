@@ -33,3 +33,4 @@
 {"date":"2023-10-24T18:23:38.506Z","level":"error","message":"Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)","method":"GET","service":"user-service","url":"/get-reported"}
 {"date":"2023-10-24T18:23:40.777Z","level":"error","message":"Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)","method":"GET","service":"user-service","url":"/get-reported"}
 {"date":"2023-10-24T18:25:56.794Z","level":"error","message":"Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)","method":"GET","service":"user-service","url":"/get-reported"}
+{"date":"2023-10-27T16:12:32.240Z","level":"error","message":"category is not defined","method":"POST","service":"user-service","url":"/search-statement"}
