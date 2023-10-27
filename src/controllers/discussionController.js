@@ -114,10 +114,17 @@ const popularStatements = async (req, res) => {
 const searchStatement = async (req, res) => {
   // #swagger.tags = ['discussion']
   try {
-    const { title, category } = req.body;
+    // const { title, category } = req.body;
+    const titleFilter = req.body.title
+      ? { title: { $regex: req.body.title, $options: "i" } }
+      : {};
+    const categoryFilter = req.body.category
+      ? { category: { $in: req.body.category } }
+      : {};
     const statements = await Statement.find({
-      title: { $regex: title, $options: "i" },
-      category: { $in: category },
+      // category: { $in: category },
+      ...titleFilter,
+      ...categoryFilter,
     }).populate("user");
     return SuccessHandler(
       {
