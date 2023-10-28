@@ -384,7 +384,7 @@ const getCategories = async (req, res) => {
 const getAllStatements = async (req, res) => {
   // #swagger.tags = ['discussion']
   try {
-    const itemPerPage = 2;
+    const itemPerPage = Number(req.body.itemPerPage);
     const pageNumber = Number(req.body.page) || 1;
     const skipItems = (pageNumber - 1) * itemPerPage;
     const titleFilter = req.body.title
@@ -393,6 +393,7 @@ const getAllStatements = async (req, res) => {
     const categoryFilter = req.body.category
       ? { category: { $in: req.body.category } }
       : {};
+    const totalStatementsCount = await Statement.countDocuments();
     const statements = await Statement.find({
       ...titleFilter,
       ...categoryFilter,
@@ -405,6 +406,7 @@ const getAllStatements = async (req, res) => {
     return SuccessHandler(
       {
         message: "Statement fetched",
+        totalStatements: totalStatementsCount,
         statements,
       },
       200,
