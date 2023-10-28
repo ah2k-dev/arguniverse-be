@@ -381,6 +381,40 @@ const getCategories = async (req, res) => {
   }
 };
 
+const getAllStatements = async (req, res) => {
+  // #swagger.tags = ['discussion']
+  try {
+    const itemPerPage = 2;
+    const pageNumber = Number(req.body.page) || 1;
+    const skipItems = (pageNumber - 1) * itemPerPage;
+    const titleFilter = req.body.title
+      ? { title: { $regex: req.body.title, $options: "i" } }
+      : {};
+    const categoryFilter = req.body.category
+      ? { category: { $in: req.body.category } }
+      : {};
+    const statements = await Statement.find({
+      ...titleFilter,
+      ...categoryFilter,
+    })
+      .populate("user")
+      .sort({ createdAt: -1 })
+      .skip(skipItems)
+      .limit(itemPerPage);
+
+    return SuccessHandler(
+      {
+        message: "Statement fetched",
+        statements,
+      },
+      200,
+      res
+    );
+  } catch (error) {
+    return ErrorHandler(error.message, 500, req, res);
+  }
+};
+
 module.exports = {
   createStatement,
   createArgument,
@@ -394,4 +428,5 @@ module.exports = {
   getReported,
   getArgument,
   getCategories,
+  getAllStatements,
 };

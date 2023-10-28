@@ -30,11 +30,9 @@ router
   .route("/delete-argument/:id")
   .delete(isAuthenticated, discussion.deleteArgument);
 
-router.route("/get-reported").get(
-  // isAuthenticated,
-  discussion.getReported
-);
+router.route("/get-reported").get(isAuthenticated, discussion.getReported);
 
 router.route("/get-statement-categories").get(discussion.getCategories);
+router.route("/get-statements").post(discussion.getAllStatements);
 
 module.exports = router;
