@@ -196,7 +196,7 @@ const reportStatement = async (req, res) => {
 
     statement.save();
     let message = `${statement.title} statement has been reported. Please check the statement and take actions if needed.`;
-    // await sendMail("arguniverse@gmail.com", "Statement Report", message);
+    await sendMail("arguniverse@gmail.com", "Statement Report", message);
 
     return SuccessHandler(
       {
@@ -227,7 +227,7 @@ const reportArgument = async (req, res) => {
 
     argument.save();
     let message = `${argument.comment} argument has been reported. Please check the argument and take actions if needed.`;
-    // await sendMail("arguniverse@gmail.com", "Argument Report", message);
+    await sendMail("arguniverse@gmail.com", "Argument Report", message);
     return SuccessHandler(
       {
         message: "Argument reported successfully",

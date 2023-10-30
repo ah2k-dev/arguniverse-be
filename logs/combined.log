@@ -1078,3 +1078,18 @@
 {"date":"2023-10-28T06:45:25.777Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/get-statements"}
 {"date":"2023-10-28T06:45:27.929Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/get-statements"}
 {"date":"2023-10-28T06:45:31.618Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/get-statements"}
+{"date":"2023-10-30T20:03:56.181Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/api-docs"}
+{"date":"2023-10-30T20:03:56.222Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/api-docs/"}
+{"date":"2023-10-30T20:03:56.385Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/api-docs/swagger-ui.css"}
+{"date":"2023-10-30T20:03:56.398Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/api-docs/swagger-ui-bundle.js"}
+{"date":"2023-10-30T20:03:56.415Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/api-docs/swagger-ui-standalone-preset.js"}
+{"date":"2023-10-30T20:03:56.419Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/api-docs/swagger-ui-init.js"}
+{"date":"2023-10-30T20:03:58.902Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/api-docs/favicon-32x32.png"}
+{"date":"2023-10-30T20:04:40.238Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/api-docs/"}
+{"date":"2023-10-30T20:04:40.352Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/api-docs/swagger-ui.css"}
+{"date":"2023-10-30T20:04:40.357Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/api-docs/swagger-ui-bundle.js"}
+{"date":"2023-10-30T20:04:40.372Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/api-docs/swagger-ui-standalone-preset.js"}
+{"date":"2023-10-30T20:04:40.374Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/api-docs/swagger-ui-init.js"}
+{"date":"2023-10-30T20:04:53.746Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/forgotPassword"}
+{"date":"2023-10-30T20:04:55.133Z","level":"error","message":"Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials d25-20020a50cd59000000b0053e469f6505sm6613903edj.26 - gsmtp","method":"POST","service":"user-service","url":"/forgotPassword"}
+{"date":"2023-10-30T20:17:05.135Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/forgotPassword"}

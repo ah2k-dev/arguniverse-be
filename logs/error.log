@@ -34,3 +34,4 @@
 {"date":"2023-10-24T18:23:40.777Z","level":"error","message":"Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)","method":"GET","service":"user-service","url":"/get-reported"}
 {"date":"2023-10-24T18:25:56.794Z","level":"error","message":"Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)","method":"GET","service":"user-service","url":"/get-reported"}
 {"date":"2023-10-27T16:12:32.240Z","level":"error","message":"category is not defined","method":"POST","service":"user-service","url":"/search-statement"}
+{"date":"2023-10-30T20:04:55.133Z","level":"error","message":"Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials d25-20020a50cd59000000b0053e469f6505sm6613903edj.26 - gsmtp","method":"POST","service":"user-service","url":"/forgotPassword"}
