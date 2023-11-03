@@ -35,3 +35,8 @@
 {"date":"2023-10-24T18:25:56.794Z","level":"error","message":"Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)","method":"GET","service":"user-service","url":"/get-reported"}
 {"date":"2023-10-27T16:12:32.240Z","level":"error","message":"category is not defined","method":"POST","service":"user-service","url":"/search-statement"}
 {"date":"2023-10-30T20:04:55.133Z","level":"error","message":"Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials d25-20020a50cd59000000b0053e469f6505sm6613903edj.26 - gsmtp","method":"POST","service":"user-service","url":"/forgotPassword"}
+{"date":"2023-11-03T18:29:02.894Z","level":"error","message":"The provided authorization grant is invalid, expired, or revoked","method":"POST","service":"user-service","url":"/"}
+{"date":"2023-11-03T18:30:05.438Z","level":"error","message":"The provided authorization grant is invalid, expired, or revoked","method":"POST","service":"user-service","url":"/"}
+{"date":"2023-11-03T18:30:56.415Z","level":"error","message":"The provided authorization grant is invalid, expired, or revoked","method":"POST","service":"user-service","url":"/"}
+{"date":"2023-11-03T19:33:55.188Z","level":"error","message":"Statement does not exist","method":"GET","service":"user-service","url":"/get-statement/652c5ae4630cee9305cd1311"}
+{"date":"2023-11-03T19:33:55.473Z","level":"error","message":"Statement does not exist","method":"GET","service":"user-service","url":"/get-statement/652c5ae4630cee9305cd1311"}

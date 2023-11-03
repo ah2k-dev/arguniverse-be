@@ -18,11 +18,16 @@ router.route("/").post(async (req, res) => {
 router.route("/get").post(async (req, res) => {
   try {
     const { pageNo, pageSize } = req.body;
+    const contactCounts = await Contact.countDocuments();
     const contacts = await Contact.find({})
       .skip(pageSize * (pageNo - 1))
       .limit(pageSize)
       .sort({ createdAt: -1 });
-    return SuccessHandler(contacts, 200, res);
+    return SuccessHandler(
+      { message: "Contact Detail fetch", contacts, contactCounts },
+      200,
+      res
+    );
   } catch (error) {
     return ErrorHandler(error.message, 500, req, res);
   }
