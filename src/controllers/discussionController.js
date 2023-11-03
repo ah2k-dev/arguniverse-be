@@ -394,6 +394,11 @@ const getAllStatements = async (req, res) => {
       ? { category: { $in: req.body.category } }
       : {};
     // const totalStatementsCount = await Statement.countDocuments();
+    const totalStatementsCount = await Statement.countDocuments({
+      ...titleFilter,
+      ...categoryFilter,
+    });
+
     const statements = await Statement.find({
       ...titleFilter,
       ...categoryFilter,
@@ -405,8 +410,8 @@ const getAllStatements = async (req, res) => {
 
     return SuccessHandler(
       {
-        message: "Statement fetched",
-        totalStatements: statements.length,
+        message: "Statements fetched",
+        totalStatements: totalStatementsCount,
         statements,
       },
       200,
