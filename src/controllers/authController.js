@@ -85,6 +85,9 @@ const forgotPassword = async (req, res) => {
 
   try {
     const { email } = req.body;
+    if (!validator.isEmail(email)) {
+      return ErrorHandler("Invalid email format", 400, req, res);
+    }
     const user = await User.findOne({ email });
     if (!user) {
       return ErrorHandler("User does not exist", 400, req, res);
@@ -109,6 +112,9 @@ const resetPassword = async (req, res) => {
 
   try {
     const { email, passwordResetToken, password } = req.body;
+    if (!validator.isEmail(email)) {
+      return ErrorHandler("Invalid email format", 400, req, res);
+    }
     const user = await User.findOne({ email }).select("+password");
     if (!user) {
       return ErrorHandler("User does not exist", 400, req, res);
