@@ -50,7 +50,7 @@ const login = async (req, res) => {
     }
     const user = await User.findOne({ email }).select("+password");
     if (!user) {
-      return ErrorHandler("User does not exist", req, 400, res);
+      return ErrorHandler("User does not exist", 400, req, res);
     }
     const isMatch = await user.comparePassword(password);
     if (!isMatch) {
@@ -286,7 +286,7 @@ const updateUserProfile = async (req, res) => {
       );
       return SuccessHandler(
         {
-          message: "User Profile updated Successfully",
+          message: "Profile updated Successfully",
         },
         200,
         res
