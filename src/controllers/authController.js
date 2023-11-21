@@ -1,4 +1,5 @@
 const User = require("../models/User/user");
+const validator = require("validator");
 const sendMail = require("../utils/sendMail");
 const SuccessHandler = require("../utils/SuccessHandler");
 const ErrorHandler = require("../utils/ErrorHandler");
@@ -44,6 +45,9 @@ const login = async (req, res) => {
 
   try {
     const { email, password } = req.body;
+    if (!validator.isEmail(email)) {
+      return ErrorHandler("Invalid email format", 400, req, res);
+    }
     const user = await User.findOne({ email }).select("+password");
     if (!user) {
       return ErrorHandler("User does not exist", req, 400, res);

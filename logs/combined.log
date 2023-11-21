@@ -1876,3 +1876,94 @@
 {"date":"2023-11-21T18:14:50.549Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
 {"date":"2023-11-21T18:14:50.765Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/userProfile"}
 {"date":"2023-11-21T18:14:50.817Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T18:49:36.498Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T18:54:59.175Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T18:55:47.010Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T18:56:00.933Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T18:57:00.960Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T18:59:36.119Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T18:59:52.479Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:00:48.326Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:01:00.438Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:01:14.613Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:01:44.593Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:01:58.485Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:02:22.808Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:02:39.776Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:02:52.608Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:05:29.041Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:06:10.614Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/get-statements"}
+{"date":"2023-11-21T19:06:13.470Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:06:13.739Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:07:08.932Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:07:20.159Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:07:37.410Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:07:49.868Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:07:54.421Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:08:11.203Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:08:25.448Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:08:33.392Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:09:01.071Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement/652c5aee630cee9305cd1314"}
+{"date":"2023-11-21T19:19:17.130Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:19:17.137Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:19:46.764Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/get-statements"}
+{"date":"2023-11-21T19:19:46.779Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:19:47.044Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:19:49.333Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/auth/userProfile"}
+{"date":"2023-11-21T19:19:49.340Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:19:49.345Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/discussion/get-statements"}
+{"date":"2023-11-21T19:19:49.624Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/discussion/get-statement-categories"}
+{"date":"2023-11-21T19:19:58.767Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:19:58.772Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:01.292Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:01.298Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:01.508Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:01.512Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:01.728Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:01.729Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:01.901Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:01.904Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:02.069Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:02.070Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:02.245Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:02.246Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:02.404Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:02.405Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:02.587Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:02.588Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:02.773Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:02.774Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:02.891Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:02.892Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:03.243Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:03.244Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:03.459Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:03.460Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:03.620Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:03.621Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:03.800Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:03.801Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:03.987Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:03.988Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:04.166Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:04.167Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:04.349Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:04.350Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:04.524Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:04.527Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:04.707Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:04.710Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:04.891Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:04.895Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:05.071Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:05.072Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:05.236Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:05.237Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:05.437Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:05.438Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:05.619Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:05.620Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:05.815Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:05.817Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
+{"date":"2023-11-21T19:20:05.986Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2023-11-21T19:20:05.987Z","level":"error","message":"Invalid email format","method":"POST","service":"user-service","url":"/login"}
