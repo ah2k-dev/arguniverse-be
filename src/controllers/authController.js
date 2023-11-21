@@ -90,7 +90,7 @@ const forgotPassword = async (req, res) => {
     }
     const user = await User.findOne({ email });
     if (!user) {
-      return ErrorHandler("User does not exist", 400, req, res);
+      return ErrorHandler("User does not exist", 500, req, res);
     }
     const passwordResetToken = Math.floor(100000 + Math.random() * 900000);
     const passwordResetTokenExpires = new Date(Date.now() + 10 * 60 * 1000);
