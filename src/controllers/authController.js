@@ -196,6 +196,96 @@ const users = async (req, res) => {
     return ErrorHandler(error.message, 500, req, res);
   }
 };
+const userProfile = async (req, res) => {
+  // #swagger.tags = ['auth']
+  try {
+    let userData = await User.findById(req.user._id);
+    return SuccessHandler(
+      {
+        message: "User Profile Fetched Successfully",
+        userData,
+      },
+      200,
+      res
+    );
+  } catch (error) {
+    return ErrorHandler(error.message, 500, req, res);
+  }
+};
+const updateUserProfile = async (req, res) => {
+  // #swagger.tags = ['auth']
+  try {
+    const {
+      firstName,
+      lastName,
+      email,
+      currentPassword,
+      newPassword,
+      isUpdatePassword,
+    } = req.body;
+
+    if (!isUpdatePassword) {
+      console.log(!updatePassword);
+      console.log("Not update Password");
+      await User.findOneAndUpdate(
+        { _id: req.user._id },
+        {
+          $set: {
+            firstName,
+            lastName,
+            email,
+          },
+        }
+      );
+      return SuccessHandler(
+        {
+          message: "User Profile updated Successfully",
+        },
+        200,
+        res
+      );
+    }
+    if (isUpdatePassword) {
+      console.log(isUpdatePassword);
+      console.log("update Password");
+      const user = await User.findById(req.user.id).select("+password");
+      const isMatch = await user.comparePassword(currentPassword);
+      if (!isMatch) {
+        return ErrorHandler("Invalid credentials", 400, req, res);
+      }
+      const samePasswords = await user.comparePassword(newPassword);
+      if (samePasswords) {
+        return ErrorHandler(
+          "New password cannot be same as old password",
+          400,
+          req,
+          res
+        );
+      }
+      user.password = newPassword;
+      await user.save();
+      await User.findOneAndUpdate(
+        { _id: req.user._id },
+        {
+          $set: {
+            firstName,
+            lastName,
+            email,
+          },
+        }
+      );
+      return SuccessHandler(
+        {
+          message: "User Profile updated Successfully",
+        },
+        200,
+        res
+      );
+    }
+  } catch (error) {
+    return ErrorHandler(error.message, 500, req, res);
+  }
+};
 
 module.exports = {
   register,
@@ -205,4 +295,6 @@ module.exports = {
   resetPassword,
   updatePassword,
   users,
+  userProfile,
+  updateUserProfile,
 };
