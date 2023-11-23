@@ -99,7 +99,7 @@ const forgotPassword = async (req, res) => {
     await user.save();
     const message = `Your password reset token is ${passwordResetToken} and it expires in 10 minutes`;
     const subject = `Password reset token`;
-    await sendMail(email, subject, message);
+    // await sendMail(email, subject, message);
     return SuccessHandler(`Password reset token sent to ${email}`, 200, res);
   } catch (error) {
     return ErrorHandler(error.message, 500, req, res);

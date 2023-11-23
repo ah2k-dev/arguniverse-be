@@ -7,7 +7,7 @@ router.route("/").post(async (req, res) => {
   try {
     const { name, email, subject, comment } = req.body;
     const text = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nComment: ${comment}`;
-    await sendMail(email, subject, text);
+    // await sendMail(email, subject, text);
     await Contact.create({ name, email, subject, comment });
     return SuccessHandler("Email sent successfully", 200, res);
   } catch (error) {
