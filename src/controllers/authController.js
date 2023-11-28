@@ -22,19 +22,39 @@ const register = async (req, res) => {
     //     res
     //   );
     // }
-    const isUsername = await User.findOne({ username });
-    if (isUsername) {
+    // const isUsername = await User.findOne({ username });
+    // if (isUsername) {
+    //   return ErrorHandler(
+    //     "User with this username already exists",
+    //     400,
+    //     req,
+    //     res
+    //   );
+    // }
+
+    // const user = await User.findOne({ email });
+    // if (user) {
+    //   return ErrorHandler("User already exists", 400, req, res);
+    // }
+    const user = await User.findOne({
+      $or: [
+        {
+          email: email,
+        },
+        {
+          username: username,
+        },
+      ],
+    });
+    if (user) {
       return ErrorHandler(
-        "User with this username already exists",
+        user.email === email
+          ? "User already exist"
+          : "User with this username already exist",
         400,
         req,
         res
       );
-    }
-
-    const user = await User.findOne({ email });
-    if (user) {
-      return ErrorHandler("User already exists", 400, req, res);
     }
     const newUser = await User.create({
       firstName,
