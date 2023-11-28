@@ -9,7 +9,7 @@ const Statement = require("../models/Discussions/statement");
 const register = async (req, res) => {
   // #swagger.tags = ['auth']
   try {
-    const { firstName, lastName, email, password } = req.body;
+    const { firstName, lastName, email, password, username } = req.body;
     // if (
     //   !password.match(
     //     /(?=[A-Za-z0-9@#$%^&+!=]+$)^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+!=])(?=.{8,}).*$/
@@ -22,6 +22,16 @@ const register = async (req, res) => {
     //     res
     //   );
     // }
+    const isUsername = await User.findOne({ username });
+    if (isUsername) {
+      return ErrorHandler(
+        "User with this username already exists",
+        400,
+        req,
+        res
+      );
+    }
+
     const user = await User.findOne({ email });
     if (user) {
       return ErrorHandler("User already exists", 400, req, res);
@@ -29,6 +39,7 @@ const register = async (req, res) => {
     const newUser = await User.create({
       firstName,
       lastName,
+      username,
       email,
       password,
     });
